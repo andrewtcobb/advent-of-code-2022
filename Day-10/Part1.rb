@@ -13,7 +13,7 @@ signal_strengths = Array.new
 CYCLE_TIME_FOR_ADDING = 2
 
 
-input.each_with_index do |instruction, index|
+input.each_with_index do |instruction|
   if instruction == 'noop'
     cycle_number += 1
     if observe_cycle?(cycle_number)
