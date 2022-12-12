@@ -8,4 +8,4 @@ monkeys = parse_input(input)
 
 monkeys = conduct_monkey_business(monkeys)
 
-puts monkeys.sort_by {|monkey| monkey.number_of_inspections}.last(2).map {|monkey| monkey.number_of_inspections}.reduce(:*)
+puts monkeys.map {|monkey| monkey.number_of_inspections}.sort.last(2).reduce(:*)
